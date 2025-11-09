@@ -12,14 +12,16 @@ const weatherData = [
             '5pm': 14,
             '6pm': 11,
         },
-        sunrise: '06:47am',
-        sunset: '5:04pm',
-        precipitation: '60%',
-        humidity: '15%',
-        wind: '17 km/h',
-        pressure: '1021 hPa',
-        feelsLike: '26.6°',
-        visibility: '50 km'
+        weatherDetails: {
+            sunrise: '06:47am',
+            sunset: '5:04pm',
+            precipitation: '60%',
+            humidity: '15%',
+            wind: '17 km/h',
+            pressure: '1021 hPa',
+            feelsLike: '26.6°',
+            visibility: '50 km'
+        },
     },
     {
         city: 'Rustavi',
@@ -34,14 +36,16 @@ const weatherData = [
             '5pm': 24,
             '6pm': 21,
         },
-        sunrise: '06:47am',
-        sunset: '5:04pm',
-        precipitation: '60%',
-        humidity: '15%',
-        wind: '17 km/h',
-        pressure: '1021 hPa',
-        feelsLike: '26.6°',
-        visibility: '50 km'
+        weatherDetails: {
+            sunrise: '06:47am',
+            sunset: '5:04pm',
+            precipitation: '60%',
+            humidity: '15%',
+            wind: '17 km/h',
+            pressure: '1021 hPa',
+            feelsLike: '26.6°',
+            visibility: '50 km'
+        },
     },
     {
         city: 'Batumi',
@@ -56,13 +60,15 @@ const weatherData = [
             '5pm': 34,
             '6pm': 31,
         },
-        sunrise: '06:47am',
-        sunset: '5:04pm',
-        precipitation: '60%',
-        humidity: '15%',
-        wind: '17 km/h',
-        pressure: '1021 hPa',
-        feelsLike: '26.6°',
-        visibility: '50 km'
+        weatherDetails: {
+            sunrise: '06:47am',
+            sunset: '5:04pm',
+            precipitation: '60%',
+            humidity: '15%',
+            wind: '17 km/h',
+            pressure: '1021 hPa',
+            feelsLike: '26.6°',
+            visibility: '50 km'
+        },
     },
 ];
