@@ -13,7 +13,23 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header__main"></header>
+    <header class="header__main">
+      <div class="header__main__wrapper">
+        <div class="header__search">
+          <input
+            type="text"
+            placeholder="E.g. Warsaw"
+            class="header__search__input"
+          />
+          <div class="header__search__icon"></div>
+        </div>
+        <div class="header__switch">
+          <span>C</span>
+          <span>/</span>
+          <span>F</span>
+        </div>
+      </div>
+    </header>
 
     <!-- main -->
     <main>
@@ -21,22 +37,67 @@
       <section class="hero__section">
         <!-- left section -->
         <div class="hero__section__left">
-          <div class="left__date_info">
+          <div class="hero__section__left__date__info">
             <div>
               <h3>Today</h3>
               <p>Wed, 17 Feb</p>
             </div>
             <img src="./assets/icons/Icon metro-sun.svg" alt="">
           </div>
-          <span class="left__current_temp"></span>
-          <div class="left__location">
-            <span></span>
+          <span class="hero__section__left__current__temp"></span>
+          <div class="hero__section__left__location">
             <img src="./assets/icons/Icon material-location-on.svg" alt="">
+            <span></span>
           </div>
         </div>
 
         <!-- right section -->
-        <div class="hero__section__right"></div>
+        <div class="hero__section__right">
+          <div class="hero__section__right__titles">
+            <span>Now</span>
+            <span>12 pm</span>
+            <span>1 pm</span>
+            <span>2 pm</span>
+            <span>3 pm</span>
+            <span>4 pm </span>
+            <span>5 pm</span>
+            <span>6 pm</span>
+          </div>
+          <div class="hero__section__right__cards">
+            <div class="hero__section__right__card card-active">
+              <div class="temperature__img"></div>
+              <span class="temperature__count">TMP</span>
+            </div>
+            <div class="hero__section__right__card">
+              <div class="temperature__img"></div>
+              <span class="temperature__count">TMP</span>
+            </div>
+            <div class="hero__section__right__card">
+              <div class="temperature__img"></div>
+              <span class="temperature__count">TMP</span>
+            </div>
+            <div class="hero__section__right__card">
+              <div class="temperature__img"></div>
+              <span class="temperature__count">TMP</span>
+            </div>
+            <div class="hero__section__right__card">
+              <div class="temperature__img"></div>
+              <span class="temperature__count">TMP</span>
+            </div>
+            <div class="hero__section__right__card">
+              <div class="temperature__img"></div>
+              <span class="temperature__count">TMP</span>
+            </div>
+            <div class="hero__section__right__card">
+              <div class="temperature__img"></div>
+              <span class="temperature__count">TMP</span>
+            </div>
+            <div class="hero__section__right__card">
+              <div class="temperature__img"></div>
+              <span class="temperature__count">TMP</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- weather details -->
@@ -56,6 +117,9 @@
 
     <!-- Scripts -->
     <script src="./features/scripts/app.js"></script>
+    <script src="./features/scripts/search.js"></script>
+    <script src="./features/scripts/weather-hero.js"></script>
+    <script src="./features/scripts/temperature-switch.js"></script>
     <script src="./features/scripts/weather-details.js"></script>
     <script src="./features/scripts/not-found.js"></script>
   </body>
