@@ -1,8 +1,172 @@
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
+.header__main__wrapper {
+  max-width: 1224px;
+  min-height: 38px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__main__wrapper .header__search {
+  max-width: 912px;
+  width: 100%;
+  min-height: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+  opacity: 0.6;
+}
+.header__main__wrapper .header__search__input {
+  max-width: 146px;
+  width: 100%;
+  min-height: 19px;
+  background: none;
+  border: none;
+  font-family: "Helvetica Neue", sans-serif;
+  color: white;
+}
+.header__main__wrapper .header__search__input::-moz-placeholder {
+  opacity: 0.6;
+  font-size: 16px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: white;
+}
+.header__main__wrapper .header__search__input::placeholder {
+  opacity: 0.6;
+  font-size: 16px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: white;
+}
+.header__main__wrapper .header__search__input:focus {
+  border: none;
+  outline: none;
+}
+.header__main__wrapper .header__search__icon {
+  max-width: 20px;
+  width: 100%;
+  min-height: 20px;
+  background-image: url(../../assets/images/icons/search-iconf.svg);
+  background-size: contain;
+  opacity: 0.6;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7457%) hue-rotate(93deg) brightness(100%) contrast(102%);
+}
+.header__main__wrapper .header__switch {
+  max-width: 163px;
+  width: 100%;
+  min-height: 38px;
+  background-color: white;
+  border-radius: 29px;
+  padding: 0px 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(19, 38, 74, 0.2);
+  gap: 0.25rem;
+  font-size: 18px;
+}
+.header__main__wrapper .header__switch span:first-child, .header__main__wrapper .header__switch span:last-child {
+  cursor: pointer;
+}
+.header__main__wrapper .header__switch .switch-active {
+  color: #1AAFE0;
+}
+
+.hero__section__right__card {
+  max-width: 80px;
+  width: 100%;
+  min-height: 120px;
+  background-color: rgba(26, 32, 33, 0.3019607843);
+  border-radius: 40px;
+  border: 0.5px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.hero__section__right__card span {
+  color: white;
+}
+.hero__section__right__card .temperature__img {
+  max-width: 59px;
+  width: 100%;
+  min-height: 42px;
+  background-image: url(../../assets/icons/cloud-computing.svg);
+}
+
+.card-active {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+}
+.card-active .temperature__img {
+  background-image: url(../../assets/icons/snowflake.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .hero__section {
   display: flex;
   gap: 64px;
 }
+.hero__section__left {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.hero__section__left__date__info {
+  display: flex;
+  gap: 20px;
+}
+.hero__section__left__date__info h3 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+.hero__section__left__date__info p {
+  font-size: 15px;
+}
+.hero__section__left__current__temp {
+  font-size: 90px;
+}
+.hero__section__left__location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero__section__left__location span {
+  font-size: 26px;
+}
+.hero__section__right {
+  max-width: 808px;
+  width: 100%;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hero__section__right__titles {
+  width: 100%;
+  min-height: 26px;
+  display: flex;
+  gap: 1rem;
+  text-align: center;
+  width: 100%;
+}
+.hero__section__right__titles span {
+  max-width: 80px;
+  width: 100%;
+  opacity: 0.85;
+  font-size: 22px;
+  letter-spacing: 0;
+}
+.hero__section__right__cards {
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  gap: 1rem;
+}
+
 .weather__details {
   display: flex;
   flex-direction: column;

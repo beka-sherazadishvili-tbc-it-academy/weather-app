@@ -1,0 +1,35 @@
+.hero__section__right__card {
+  max-width: 80px;
+  width: 100%;
+  min-height: 120px;
+  background-color: #1a20214d;
+  border-radius: 40px;
+  border: 0.5px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  span {
+    color: white;
+  }
+
+  .temperature__img {
+    max-width: 59px;
+    width: 100%;
+    min-height: 42px;
+    background-image: url(../../assets/icons/cloud-computing.svg);
+  }
+}
+
+.card-active {
+  background-color: #ffffff99;
+  border: none;
+  .temperature__img{
+    background-image: url(../../assets/icons/snowflake.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
