@@ -1,4 +1,62 @@
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
+.header__main__wrapper {
+  max-width: 1224px;
+  min-height: 38px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__main__wrapper .header__search {
+  max-width: 912px;
+  width: 100%;
+  min-height: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+  opacity: 0.6;
+}
+.header__main__wrapper .header__search__input {
+  max-width: 146px;
+  width: 100%;
+  min-height: 19px;
+  background: none;
+  border: none;
+  font-family: "Helvetica Neue", sans-serif;
+  color: white;
+}
+.header__main__wrapper .header__search__input::-moz-placeholder {
+  opacity: 0.6;
+  font-size: 16px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: white;
+}
+.header__main__wrapper .header__search__input::placeholder {
+  opacity: 0.6;
+  font-size: 16px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: white;
+}
+.header__main__wrapper .header__search__input:focus {
+  border: none;
+  outline: none;
+}
+.header__main__wrapper .header__search__icon {
+  max-width: 20px;
+  width: 100%;
+  min-height: 20px;
+  background-image: url(../../assets/images/icons/search-iconf.svg);
+  background-size: contain;
+  opacity: 0.6;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7457%) hue-rotate(93deg) brightness(100%) contrast(102%);
+}
+.header__main__wrapper .header__switch {
+  max-width: 163px;
+  width: 100%;
+  min-height: 38px;
+}
+
 .hero__section {
   display: flex;
   gap: 64px;
