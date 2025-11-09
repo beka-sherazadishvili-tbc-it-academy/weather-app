@@ -1,2 +1,19 @@
 @use "../components/header";
 @use "../layout/hero";
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    max-width: 1366px;
+    width: 100%;
+    min-height: 1042px;
+    background: transparent linear-gradient(180deg, #20D1BC 0%, #1AADE3 100%) 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+}
+
