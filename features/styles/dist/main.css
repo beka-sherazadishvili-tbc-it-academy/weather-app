@@ -3,6 +3,30 @@
   display: flex;
   gap: 64px;
 }
+.not__found {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.not__found .not__found__title {
+  opacity: 85%;
+  color: white;
+  margin-top: 97.6px;
+  font-size: 30px;
+}
+.not__found img {
+  width: 245px;
+  height: 245px;
+}
+.not__found p:last-of-type {
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 60%;
+  margin-top: 4px;
+}
+
 body {
   font-family: "Helvetica Neue", sans-serif;
   max-width: 1366px;

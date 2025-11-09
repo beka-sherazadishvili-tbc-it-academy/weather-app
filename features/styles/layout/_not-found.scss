@@ -1,0 +1,23 @@
+.not__found {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .not__found__title{
+        opacity: 85%;
+        color: white;
+        margin-top: 97.6px;
+        font-size: 30px;
+    }
+    img {
+        width: 245px;
+        height: 245px;
+    }
+    p:last-of-type {
+        font-size: 20px;
+        font-weight: bold;
+        opacity: 60%;
+        margin-top: 4px;
+    }
+}
