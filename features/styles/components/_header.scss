@@ -54,5 +54,24 @@
     max-width: 163px;
     width: 100%;
     min-height: 38px;
+    background-color: white;
+    border-radius: 29px;
+    padding: 0px 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #13264A33;
+    gap: 0.25rem;
+    font-size: 18px;
+
+    span{
+        &:first-child,&:last-child{
+            cursor: pointer;
+        }
+    }
+
+    .switch-active{
+        color: #1AAFE0;
+    }
   }
 }

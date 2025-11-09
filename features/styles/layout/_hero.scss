@@ -1,3 +1,5 @@
+@use "../components/temperature-card";
+
 .hero__section {
     display: flex;
     gap: 64px;
@@ -7,6 +9,36 @@
     }
 
     &__right{
+max-width: 808px;
+width: 100%;
+min-height: 160px;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+
+&__titles{
+    width: 100%;
+    min-height: 26px;
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    width: 100%;
+
+    span{
+        max-width: 80px;
+        width: 100%;
+        opacity: 0.85;
+        font-size: 22px;
+        letter-spacing: 0;
+    }
+}
+
+&__cards{
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+    gap: 1rem;
+}
 
     }
 }
