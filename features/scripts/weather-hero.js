@@ -5,7 +5,6 @@ const currentTempLocation = document.querySelector('.hero__section__left__locati
 
 function initializeTemperature() {
     if (currentWeatherData) {
-        console.log(`${currentWeatherData.currentTemp} ______________WEATHER HERO`)
     for (let i = 0; i < temperatureCounts.length; i++) {
       if (i === 0) {
         temperatureCounts[i].innerText = `${currentWeatherData.currentTemp}°C`;
@@ -17,7 +16,7 @@ function initializeTemperature() {
 }
 
 function showCurrentTempt() {
-  currentTempItem.innerHTML = `${currentWeatherData.currentTemp} °`;
+  currentTempItem.innerText = `${currentWeatherData.currentTemp} °`;
 }
 
 function showCurrentLocation() {

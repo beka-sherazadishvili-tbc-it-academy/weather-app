@@ -15,6 +15,7 @@ function search() {
     } else {
       currentWeatherData = weatherData[0];
     }
+    invisible(currentWeatherData);
     initializeTemperature();
     showCurrentTempt()
     insertWeatherDetails();
