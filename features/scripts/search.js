@@ -1,23 +1,20 @@
 const searchInput = document.querySelector(".header__search__input");
-let currentWeatherData = null;
+let currentWeatherData = weatherData[0];
+let searchTerm = "";
 
 function search() {
+
   searchInput.addEventListener("input", (event) => {
-    const searchTerm = event.target.value.trim();
+    searchTerm = event.target.value.trim();
 
-    if (searchTerm === "") {
-      currentWeatherData = undefined;
-      return;
+    if (searchTerm) {
+      currentWeatherData = weatherData.find(
+        (item) => item.city.toLowerCase() === searchTerm.toLowerCase()
+      );
+    } else {
+      currentWeatherData = weatherData[0];
     }
-
-    currentWeatherData = weatherData.find(
-      (item) => item.city.toLowerCase() === searchTerm.toLowerCase()
-    );
-
-    if (currentWeatherData) {
-      console.log(currentWeatherData)
-    }
+    initializeTemperature();
   });
 }
-
 search();
