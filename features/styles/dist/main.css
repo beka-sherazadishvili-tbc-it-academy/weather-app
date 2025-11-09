@@ -3,6 +3,58 @@
   display: flex;
   gap: 64px;
 }
+.weather__details {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.weather__details h1 {
+  font-size: 26px;
+  line-height: 32px;
+}
+.weather__details .weather__detail__item__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 16px;
+}
+.weather__details .weather__detail__item__list .weather__detail__item {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 20px;
+  width: 288px;
+  height: 146px;
+  border-radius: 4px;
+  padding: 37px 31px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  opacity: 0.85;
+}
+.weather__details .weather__detail__item__list .weather__detail__item img {
+  width: 27%;
+  height: 50%;
+}
+.weather__details .weather__detail__item__list .weather__detail__item .item__details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.weather__details .weather__detail__item__list .weather__detail__item .item__details span {
+  letter-spacing: 0px;
+  color: #072A41;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.weather__details .weather__detail__item__list .weather__detail__item .item__details div {
+  font-size: 34px;
+  text-align: center;
+  font: normal normal medium 34px/136px Helvetica Neue;
+  letter-spacing: 0px;
+  color: #072A41;
+  opacity: 0.85;
+}
+
 .not__found {
   display: none;
   flex-direction: column;
