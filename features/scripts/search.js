@@ -11,10 +11,14 @@ function search() {
       currentWeatherData = weatherData.find(
         (item) => item.city.toLowerCase() === searchTerm.toLowerCase()
       );
+      console.log(currentWeatherData)
     } else {
       currentWeatherData = weatherData[0];
     }
     initializeTemperature();
+    showCurrentTempt()
+    insertWeatherDetails();
+    showCurrentLocation();
   });
 }
 search();

@@ -22,8 +22,6 @@ function showCurrentLocation() {
   currentTempLocation.innerText = `${currentWeatherData.city}, ${currentWeatherData.country}`;
 }
 
+showCurrentTempt()
 showCurrentLocation();
 initializeTemperature();
-showCurrentTempt()
-
-
